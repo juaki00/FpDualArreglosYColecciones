@@ -7,6 +7,7 @@ primera o en la última posición hay un 6, y falso (false) si no.
 
 public class Ejericio1Array {
 
+    private int[] array;
     public Ejericio1Array() {
     }
 
@@ -15,10 +16,10 @@ public class Ejericio1Array {
     }
 
     public static void main(String[] args) {
+        int[] arrayNull = null;
+        int[] arrayVacio = new int[0];
+        int[] array = {1, 2, 3, 4, 5, 1};
         Ejericio1Array e1 = new Ejericio1Array();
-        int arrayNull[] = null;
-        int arrayVacio[] = new int[0];
-        int array[] = {1, 2, 3, 4, 5, 1};
 
         System.out.println(e1.empiezaTerminaEn6(array));
     }
