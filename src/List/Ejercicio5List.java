@@ -19,16 +19,14 @@ public class Ejercicio5List {
     }
 
     public List<String> numericas(){
-        int contador = 0;
         List<String> resultado = new ArrayList<String>();
 
 
 
-        for(String cad: this.cadenas){ //contar cuantos son numericos
+        for(String cad: this.cadenas){
             try{
                 int num = Integer.parseInt(cad);
                 resultado.add(Integer.toString(num));
-                contador ++;
             }
             catch (NumberFormatException e){}
 
